@@ -17,21 +17,22 @@
 			- [1.2.2 `Rectangle` Definition (`.cpp` file)](#122-rectangle-definition-cpp-file)
 			- [1.2.3 `Rectangle` Utilization (Another `.cpp` file)](#123-rectangle-utilization-another-cpp-file)
 		- [1.3 Polymorphism](#13-polymorphism)
-		- [1.4 Templates](#14-templates)
-		- [1.5 Constructor/Destructor/Copy Constructor](#15-constructordestructorcopy-constructor)
-			- [1.5.1 Use of `explicit` in Constructors](#151-use-of-explicit-in-constructors)
-		- [1.6 Initialization Lists](#16-initialization-lists)
-		- [1.7 Operator Overloading](#17-operator-overloading)
+		- [1.4 Constructor/Destructor/Copy Constructor](#14-constructordestructorcopy-constructor)
+			- [1.4.1 Use of `explicit` in Constructors](#141-use-of-explicit-in-constructors)
+		- [1.4 Initialization Lists](#14-initialization-lists)
+		- [1.5 Operator Overloading](#15-operator-overloading)
+		- [1.6 Templates](#16-templates)
 	- [2.0 General C++ Syntax](#20-general-c-syntax)
 		- [2.1 Namespaces](#21-namespaces)
-		- [2.2 References/Pointers](#22-referencespointers)
+		- [2.2 References and Pointers](#22-references-and-pointers)
 		- [2.3 Keywords](#23-keywords)
-			- [2.3.1 `const`](#231-const)
-			- [2.3.2 `volatile`](#232-volatile)
-			- [2.3.3 `inline`](#233-inline)
-		- [2.4 Strings (find, erase, etc)](#24-strings-find-erase-etc)
-		- [2.5 Iterators](#25-iterators)
-		- [2.6 Exceptions](#26-exceptions)
+			- [2.3.1 General Keywords](#231-general-keywords)
+			- [2.3.2 Storage Class Specifiers](#232-storage-class-specifiers)
+			- [2.3.3 `const` and `dynamic` Cast Conversion](#233-const-and-dynamic-cast-conversion)
+		- [2.4 Preprocessor Tokens](#24-preprocessor-tokens)
+		- [2.4 Strings (`std::string`)](#24-strings-stdstring)
+		- [2.5 Iterators (`std::iterator<...>`)](#25-iterators-stditerator)
+		- [2.6 Exceptions (`std::exception`)](#26-exceptions-stdexception)
 
 <!-- /TOC -->
 
@@ -307,6 +308,9 @@ array.Print(Array(12345));
 * `#line`: Changes the current file name and line number in the preprocessor
 * `#error`: Prints an error message and stops compilation
 * `#pragma`: Non-standard, used instead of header guards (`#ifndef HEADER_H` ...)
+
+>In the C and C++ programming languages, #pragma once is a non-standard but widely supported preprocessor directive designed to cause the current source file to be included only once in a single compilation. Thus, #pragma once serves the same purpose as include guards, but with several advantages, including: less code, avoidance of name clashes, and sometimes improvement in compilation speed.
+[Reference](https://en.wikipedia.org/wiki/Pragma_once)
 
 ### 2.4 Strings (`std::string`)
 [Reference](http://en.cppreference.com/w/cpp/string/basic_string)
